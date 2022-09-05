@@ -1,0 +1,37 @@
+<html>
+
+<head>
+
+    <title>Twitter Searcher</title>
+    <style>
+        a,div,input{
+            font-size:20px;
+        }
+        a{
+            text-decoration:none;
+            background-color:lightblue;
+            padding:10px;
+            margin-left:3px;
+            margin-right:3px;
+        }
+    </style>
+</head>
+
+<body style="padding:2%;">
+    <div style="text-align:center;">
+        <img src="twitter.png" width="235px" style="vertical-align:middle" />
+        <br />
+        <a target="_blank" href="https://twitter.com/"><img src="twitter.png" width="35px" style="vertical-align:middle" />Twitter Home</a>
+        <a target="_blank" href="https://twitter.com/search?q=&src=typed_query"><img src="twitter.png" width="35px" style="vertical-align:middle" />Twitter Search Page</a>
+        <input type="text" id="txtSeach" />
+        <a href="javascript:void(0)" onclick="GoToTwitter()"><img src="twitter.png" width="35px" style="vertical-align:middle" />Search</a>
+    </div>
+<script>
+    function GoToTwitter() {
+        window.open("https://twitter.com/search?q=" + document.getElementById('txtSeach').value + "&src=typed_query","_blank");
+        
+    }
+</script>
+</body>
+
+</html>
